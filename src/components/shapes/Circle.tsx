@@ -6,11 +6,12 @@ export type CircleProps = {
     r: number
     stroke: string
     fillColor: string
+    className: string
 }
 
 export const Circle: React.ForwardRefExoticComponent<CircleProps & React.RefAttributes<SVGCircleElement>> =
     forwardRef((props: CircleProps, circleRef: React.ForwardedRef<SVGCircleElement>) => {
-    return <circle
+    return <circle className={props.className}
         cx={props.cx}
         cy={props.cy}
         r={props.r}
