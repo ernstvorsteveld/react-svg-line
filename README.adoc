@@ -1,0 +1,17 @@
+= React using SVG
+
+Understanding the use of refs in a react application.
+
+== Install and run
+
+[source,bash]
+----
+// install dependencies
+
+npm install
+
+// run the application
+
+npm run dev
+----
+
