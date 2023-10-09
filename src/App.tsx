@@ -35,7 +35,7 @@ function App() {
                 <Circle cx = {firstCircle.cx} cy={firstCircle.cy} r={firstCircle.r} stroke={firstCircle.stroke}
                         fillColor={firstCircle.fillColor} ref={first}/>
                 <Circle cx = {secondCircle.cx} cy={secondCircle.cy} r={secondCircle.r} stroke={secondCircle.stroke}
-                        fillColor={secondCircle.fillColor} ref={first}/>
+                        fillColor={secondCircle.fillColor} ref={second}/>
                 <Line x1={line.x1} y1={line.y1} x2={line.x2} y2={line.y2} stroke={line.stroke} strokeWidth={line.strokeWidth}/>
             </svg>
             <button onClick={clickedFirst}>First</button>
