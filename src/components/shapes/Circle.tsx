@@ -1,15 +1,19 @@
-import React, { FunctionComponent } from 'react';
+import React, {forwardRef} from 'react';
 
 type CircleProps = {
-  cy: number
-  r: number
-  fillColor: string
+    cy: number
+    r: number
+    stroke: string
+    fillColor: string
 }
 
-export const Circle: FunctionComponent<CircleProps> = ({ cy, r, fillColor }) =>
-  <circle
-    cy={cy}
-    r={r}
-    stroke="black"
-    fill={fillColor} >
-  </circle>
+export const Circle = forwardRef((props: CircleProps, circleRef: React.ForwardedRef<SVGCircleElement>) => {
+    return <circle
+        cy={props.cy}
+        r={props.r}
+        stroke={props.stroke}
+        fill={props.fillColor}
+        ref={circleRef}
+    >
+    </circle>;
+});
