@@ -31,7 +31,7 @@ function App() {
 
     return (
         <>
-            <svg className="circles" viewBox="0 0 1 200" width="900" height="900" xmlns="http://www.w3.org/2000/svg">
+            <svg className="circles" viewBox="0 0 200 200" width="900" height="900" xmlns="http://www.w3.org/2000/svg">
                 <Circle cx = {firstCircle.cx} cy={firstCircle.cy} r={firstCircle.r} stroke={firstCircle.stroke}
                         fillColor={firstCircle.fillColor} ref={first}/>
                 <Circle cx = {secondCircle.cx} cy={secondCircle.cy} r={secondCircle.r} stroke={secondCircle.stroke}
